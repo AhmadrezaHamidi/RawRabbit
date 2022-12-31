@@ -1,7 +1,0 @@
-C:\AhmadWork\GitHUb\RawRabbit\MicroTest1\obj\Debug\net7.0\MicroTest1.csproj.AssemblyReference.cache
-C:\AhmadWork\GitHUb\RawRabbit\MicroTest1\obj\Debug\net7.0\MicroTest1.GeneratedMSBuildEditorConfig.editorconfig
-C:\AhmadWork\GitHUb\RawRabbit\MicroTest1\obj\Debug\net7.0\MicroTest1.AssemblyInfoInputs.cache
-C:\AhmadWork\GitHUb\RawRabbit\MicroTest1\obj\Debug\net7.0\MicroTest1.AssemblyInfo.cs
-C:\AhmadWork\GitHUb\RawRabbit\MicroTest1\obj\Debug\net7.0\MicroTest1.csproj.CoreCompileInputs.cache
-C:\AhmadWork\GitHUb\RawRabbit\MicroTest1\obj\Debug\net7.0\MicroTest1.MvcApplicationPartsAssemblyInfo.cs
-C:\AhmadWork\GitHUb\RawRabbit\MicroTest1\obj\Debug\net7.0\MicroTest1.MvcApplicationPartsAssemblyInfo.cache
