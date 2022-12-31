@@ -2,7 +2,7 @@ using System;
 using MicroTest1.EventBusRabbitMQ_NS;
 using RabbitMQ.Client;
 
-namespace MicroTest1.EventBus.EventBusRabbitMQ_NS
+namespace MicroTest1.EventBus.EventBusRabbitMQ
 {
     public class TestRabbitMQPersistentConnection : IRabbitMQPersistentConnection
     {

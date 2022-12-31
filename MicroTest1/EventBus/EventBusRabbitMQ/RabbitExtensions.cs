@@ -1,13 +1,12 @@
-using MicroTest1.EventBus.Abstractions;
-using MicroTest1.EventBus.Events;
-using MicroTest1.EventBusRabbitMQ_NS;
+using MicroTest1.EventBus.EventBus.Abstractions;
+using MicroTest1.EventBus.EventBus.Events;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
 
-namespace MicroTest1.EventBus.EventBusRabbitMQ_NS
+namespace MicroTest1.EventBus.EventBusRabbitMQ
 {
     public static class RabbitExtensions
     {

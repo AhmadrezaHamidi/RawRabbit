@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MicroTest1.EventBus.Extensions
+namespace MicroTest1.EventBus.EventBus.Extensions
 {
     public static class GenericTypeExtensions
     {

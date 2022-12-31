@@ -1,7 +1,7 @@
-﻿using MicroTest1.EventBus.Events;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using MicroTest1.EventBus.EventBus.Events;
 
-namespace MicroTest1.EventBus.Abstractions
+namespace MicroTest1.EventBus.EventBus.Abstractions
 {
     public interface IIntegrationEventHandler<in TIntegrationEvent> : IIntegrationEventHandler 
         where TIntegrationEvent: IntegrationEvent

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MicroTest1.EventBus
+namespace MicroTest1.EventBus.EventBus
 {
     public partial class InMemoryEventBusSubscriptionsManager : IEventBusSubscriptionsManager
     {

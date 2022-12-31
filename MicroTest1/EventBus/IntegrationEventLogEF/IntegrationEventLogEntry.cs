@@ -9,7 +9,7 @@ using System.Reflection;
 using Microsoft.Extensions.Logging;
 using MicroTest1.IntegrationEventLogEF.Services;
 
-namespace MicroTest1.IntegrationEventLogEF
+namespace MicroTest1.EventBus.IntegrationEventLogEF
 {
     public class IntegrationEventLogEntry
     {

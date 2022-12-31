@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MicroTest1.EventBus.Abstractions;
-using MicroTest1.EventBus.Events;
+using MicroTest1.EventBus.EventBus.Events;
+using MicroTest1.EventBus.EventBus.Abstractions;
 
-namespace MicroTest1.EventBus
+
+namespace MicroTest1.EventBus.EventBus
 {
     public partial class InMemoryEventBusSubscriptionsManager : IEventBusSubscriptionsManager
     {

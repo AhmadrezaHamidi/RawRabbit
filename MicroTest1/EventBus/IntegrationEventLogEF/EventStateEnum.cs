@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MicroTest1.IntegrationEventLogEF
+namespace MicroTest1.EventBus.IntegrationEventLogEF
 {
     public enum EventStateEnum
     {

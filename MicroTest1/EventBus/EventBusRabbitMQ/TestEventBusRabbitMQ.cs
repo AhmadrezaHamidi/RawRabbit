@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-namespace MicroTest1.EventBus.EventBusRabbitMQ_NS
+namespace MicroTest1.EventBus.EventBusRabbitMQ
 {
     public class TestEventBusRabbitMQ : IEventBus, IDisposable
     {

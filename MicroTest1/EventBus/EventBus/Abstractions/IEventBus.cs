@@ -1,13 +1,14 @@
-﻿using MicroTest1.EventBus.Events;
-using System;
+﻿using System;
+using MicroTest1.EventBus.EventBus.Events;
 
-namespace MicroTest1.EventBus.Abstractions
+namespace MicroTest1.EventBus.EventBus.Abstractions
 {
     public interface IEventBus
     {
         void Publish(IntegrationEvent @event);
 
-        void Subscribe<T, TH>()
+
+        void Subscribe<T,TH>()
             where T : IntegrationEvent
             where TH : IIntegrationEventHandler<T>;
 

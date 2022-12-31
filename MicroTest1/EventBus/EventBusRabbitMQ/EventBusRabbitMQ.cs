@@ -1,8 +1,8 @@
 ﻿using Autofac;
 using MicroTest1.EventBus;
-using MicroTest1.EventBus.Abstractions;
-using MicroTest1.EventBus.Events;
-using MicroTest1.EventBus.Extensions;
+using MicroTest1.EventBus.EventBus.Abstractions;
+using MicroTest1.EventBus.EventBus.Events;
+using MicroTest1.EventBus.EventBus.Extensions;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -16,8 +16,9 @@ using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using MicroTest1.EventBus.EventBus;
 
-namespace MicroTest1.EventBusRabbitMQ_NS
+namespace MicroTest1.EventBus.EventBusRabbitMQ
 {
     public class EventBusRabbitMQ : IEventBus, IDisposable
     {

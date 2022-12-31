@@ -8,7 +8,7 @@ using System.Data.Common;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MicroTest1.IntegrationEventLogEF.Utilities
+namespace MicroTest1.EventBus.IntegrationEventLogEF.Utilities
 {
     public class ResilientTransaction
     {

@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Reflection;
 using System.Threading.Tasks;
-using MicroTest1.Handlers;
-using MicroTest1.Messages;
-using MicroTest1.Types;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Polly;

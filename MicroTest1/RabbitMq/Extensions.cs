@@ -3,12 +3,8 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using Autofac;
-using MicroTest1.Extentions;
-using MicroTest1.Handlers;
-using MicroTest1.Messages;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
-
 using RawRabbit;
 using RawRabbit.Common;
 using RawRabbit.Configuration;

@@ -1,10 +1,10 @@
-﻿using MicroTest1.EventBus.Abstractions;
-using MicroTest1.EventBus.Events;
+﻿using MicroTest1.EventBus.EventBus.Abstractions;
+using MicroTest1.EventBus.EventBus.Events;
 using System;
 using System.Collections.Generic;
-using static MicroTest1.EventBus.InMemoryEventBusSubscriptionsManager;
+using static MicroTest1.EventBus.EventBus.InMemoryEventBusSubscriptionsManager;
 
-namespace MicroTest1.EventBus
+namespace MicroTest1.EventBus.EventBus
 {
     public interface IEventBusSubscriptionsManager
     {

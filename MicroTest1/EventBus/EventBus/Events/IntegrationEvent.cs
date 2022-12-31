@@ -1,14 +1,13 @@
 ﻿using System;
-using MicroTest1.BaseModels;
 using Newtonsoft.Json;
 
-namespace MicroTest1.EventBus.Events
+namespace MicroTest1.EventBus.EventBus.Events
 {
     public class IntegrationEvent
     {
         private IntegrationEvent ()
         {
-            Id = IDentifiable.New;
+            Id = Guid.NewGuid();
             CreationDate = DateTime.UtcNow;
         }
 
@@ -18,14 +17,14 @@ namespace MicroTest1.EventBus.Events
         }
 
         [JsonConstructor]
-        public IntegrationEvent (IDentifiable id, DateTime createDate)
+        public IntegrationEvent (Guid id, DateTime createDate)
         {
             Id = id;
             CreationDate = createDate;
         }
 
         [JsonProperty]
-        public IDentifiable Id { get; private set; }
+        public Guid Id { get; private set; }
 
         [JsonProperty]
         public DateTime CreationDate { get; private set; }

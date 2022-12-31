@@ -1,6 +1,4 @@
 ﻿using System;
-using MicroTest1.Messages;
-using MicroTest1.Types;
 
 namespace MicroTest1.RabbitMq
 {

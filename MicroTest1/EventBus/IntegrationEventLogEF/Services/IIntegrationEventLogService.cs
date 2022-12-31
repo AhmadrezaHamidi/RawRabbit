@@ -6,7 +6,7 @@ using System.Data.Common;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MicroTest1.IntegrationEventLogEF.Services
+namespace MicroTest1.EventBus.IntegrationEventLogEF.Services
 {
     public interface IIntegrationEventLogService
     {
