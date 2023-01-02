@@ -22,9 +22,10 @@ using System.Text.Json.Serialization;
 using MicroTest1.EventBus.EventBusRabbitMQ;
 using Microsoft.Extensions.Configuration;
 using MicroTest1.Controllers;
+using Autofac.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -43,7 +44,7 @@ else if (builder.Environment.EnvironmentName?.Equals("Integeration") == true)
 ((useRabbitMq)
     ? builder.Services.AddRabbitMq(builder.Configuration).AddTransient<IActivityEventService, ActivityEventService>()
     : builder.Services.AddTestRabbitMq(builder.Configuration)
-).AddSingleton<BlockContactEventHandler>();
+).AddTransient<IActivityEventService, ActivityEventService>();
 
 
 

@@ -1,29 +1,39 @@
 ﻿<Properties StartupConfiguration="{6025ED32-A6C3-41E8-9DE4-064365E53845}|https">
+  <MonoDevelop.Ide.ItemProperties.MicroTest1 PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.MicroTest1 PreferredExecutionTarget="/Applications/Safari.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RabbitMq/CorrelationContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RabbitMq/ICorrelationContext.cs">
     <Files>
-      <File FileName="RabbitMq/BusPublisher.cs" Line="4" Column="17" />
-      <File FileName="Messages/ICommand.cs" Line="2" Column="1" />
-      <File FileName="Messages/Resource.cs" Line="11" Column="1" />
-      <File FileName="Messages/RejectedEvent.cs" Line="2" Column="1" />
-      <File FileName="Messages/MessageNamespaceAttribute.cs" Line="2" Column="1" />
-      <File FileName="Messages/IResource.cs" Line="1" Column="30" />
-      <File FileName="Messages/IRejectedEvent.cs" Line="3" Column="5" />
-      <File FileName="Messages/IMessage.cs" Line="2" Column="2" />
-      <File FileName="Messages/IEvent.cs" Line="4" Column="22" />
-      <File FileName="EventBus/IntegrationEventLogEF/Utilities/ResilientTransaction.cs" Line="1" Column="1" />
-      <File FileName="EventBus/IntegrationEventLogEF/IntegrationEventLogContext.cs" Line="1" Column="1" />
-      <File FileName="RabbitMq/IBusPublisher.cs" Line="13" Column="34" />
-      <File FileName="RabbitMq/IBusSubscriber.cs" Line="12" Column="1" />
-      <File FileName="RabbitMq/Extensions.cs" Line="28" Column="55" />
-      <File FileName="RabbitMq/BusSubscriber.cs" Line="140" Column="44" />
-      <File FileName="Messages/AhExeption.cs" Line="4" Column="25" />
+      <File FileName="RabbitMq/BusPublisher.cs" />
+      <File FileName="Messages/ICommand.cs" />
+      <File FileName="Messages/Resource.cs" />
+      <File FileName="Messages/RejectedEvent.cs" />
+      <File FileName="Messages/MessageNamespaceAttribute.cs" />
+      <File FileName="Messages/IResource.cs" />
+      <File FileName="Messages/IRejectedEvent.cs" />
+      <File FileName="Messages/IMessage.cs" />
+      <File FileName="Messages/IEvent.cs" />
+      <File FileName="EventBus/IntegrationEventLogEF/Utilities/ResilientTransaction.cs" />
+      <File FileName="EventBus/IntegrationEventLogEF/IntegrationEventLogContext.cs" />
+      <File FileName="RabbitMq/IBusPublisher.cs" />
+      <File FileName="RabbitMq/IBusSubscriber.cs" />
+      <File FileName="RabbitMq/Extensions.cs" />
+      <File FileName="RabbitMq/BusSubscriber.cs" />
+      <File FileName="Messages/AhExeption.cs" />
       <File FileName="RabbitMq/CorrelationContext.cs" Line="65" Column="30" />
+      <File FileName="RabbitMq/ICorrelationContext.cs" Line="1" Column="1" />
+      <File FileName="Controllers/BlockContactEventHandler.cs" Line="1" Column="1" />
+      <File FileName="Controllers/WeatherForecastController.cs" Line="27" Column="45" />
+      <File FileName="EventBus/EventBus/Abstractions/IDynamicIntegrationEventHandler.cs" />
+      <File FileName="EventBus/EventBus/Abstractions/IEventBus.cs" />
+      <File FileName="EventBus/EventBus/Abstractions/IIntegrationEventHandler.cs" />
+      <File FileName="RabbitMq/RabbitMqOptions.cs" />
+      <File FileName="Messages/Statics/LinqExteraExtensions.cs" Line="29" Column="1" />
+      <File FileName="Program.cs" Line="66" Column="1" />
+      <File FileName="IActivityEventService.cs" Line="30" Column="14" />
+      <File FileName="EventBus/EventBus/Events/IntegrationEvent.cs" Line="17" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -31,11 +41,21 @@
           <Node name="MicroTest1" expanded="True">
             <Node name="MicroTest1" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Messages" expanded="True" />
-              <Node name="RabbitMq" expanded="True">
-                <Node name="CorrelationContext.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="EventBus" expanded="True">
+                <Node name="EventBus" expanded="True">
+                  <Node name="Events" expanded="True" />
+                </Node>
               </Node>
+              <Node name="RabbitMq" expanded="True" />
             </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="MicroTest1" expanded="True">
+            <Node name="MicroTest1" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -45,4 +65,5 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
 </Properties>

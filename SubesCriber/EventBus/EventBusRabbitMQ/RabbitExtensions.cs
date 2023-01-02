@@ -16,61 +16,50 @@ namespace MicroTest1.EventBus.EventBusRabbitMQ
         {
 
             services.AddSingleton<IRabbitMQPersistentConnection>(sp =>
-           {
-               var loggerMq = sp.GetRequiredService<ILogger<DefaultRabbitMQPersistentConnection>>();
-               var factory = new ConnectionFactory()
-               {
-                   HostName = configuration["EventBus:HostName"],
-                   DispatchConsumersAsync = true,
-                   AutomaticRecoveryEnabled = true,
-               };
+            {
+                var loggerMq = sp.GetRequiredService<ILogger<DefaultRabbitMQPersistentConnection>>();
+                var factory = new ConnectionFactory()
+                {
+                    HostName = "localhost",
+                    DispatchConsumersAsync = true,
+                    AutomaticRecoveryEnabled = true,
+                };
 
-               factory.Port = configuration.GetValue<int>("EventBus:Port");
+                factory.Port = 5672;
 
-               if (!string.IsNullOrEmpty(configuration["EventBus:UserName"]))
-               {
-                   factory.UserName = configuration["EventBus:UserName"];
-               }
+                factory.UserName = "guest";
 
-               if (!string.IsNullOrEmpty(configuration["EventBus:Password"]))
-               {
-                   factory.Password = configuration["EventBus:Password"];
-               }
+                factory.Password = "guest";
 
-               var retryCount = 5;
-               if (!string.IsNullOrEmpty(configuration["EventBus:RetryCount"]))
-               {
-                   retryCount = int.Parse(configuration["EventBus:RetryCount"]);
-               }
+                var retryCount = 5;
+                if (!string.IsNullOrEmpty(configuration["EventBus:RetryCount"]))
+                {
+                    retryCount = int.Parse(configuration["EventBus:RetryCount"]);
+                }
 
-               return new DefaultRabbitMQPersistentConnection(factory, loggerMq, retryCount);
-           });
+                return new DefaultRabbitMQPersistentConnection(factory, loggerMq, retryCount);
+            });
             services.RegisterEventBus(configuration);
             return services;
         }
-
-        public static IServiceCollection AddTestRabbitMq(this IServiceCollection services, IConfiguration configuration)
+            public static IServiceCollection AddTestRabbitMq(this IServiceCollection services, IConfiguration configuration)
         {
 
             services.AddSingleton<IRabbitMQPersistentConnection>(sp =>
            {
                var factory = new ConnectionFactory()
                {
-                   HostName = configuration["EventBus:HostName"],
+                   HostName = "localhost",
                    DispatchConsumersAsync = true
                };
 
-               factory.Port = configuration.GetValue<int>("EventBus:Port");
+               factory.Port = 5672;
 
-               if (!string.IsNullOrEmpty(configuration["EventBus:UserName"]))
-               {
-                   factory.UserName = configuration["EventBus:UserName"];
-               }
 
-               if (!string.IsNullOrEmpty(configuration["EventBus:Password"]))
-               {
-                   factory.Password = configuration["EventBus:Password"];
-               }
+               factory.UserName = "guest";
+
+               factory.Password = "guest";
+
 
                var retryCount = 5;
                if (!string.IsNullOrEmpty(configuration["EventBus:RetryCount"]))
@@ -85,7 +74,7 @@ namespace MicroTest1.EventBus.EventBusRabbitMQ
         }
         private static void RegisterEventBus(this IServiceCollection services, IConfiguration Configuration)
         {
-            var subscriptionClientName = Configuration["EventBus:ClientName"];
+            var subscriptionClientName = "localhost";
 
             services.AddSingleton<IEventBus, EventBusRabbitMQ>(sp =>
            {

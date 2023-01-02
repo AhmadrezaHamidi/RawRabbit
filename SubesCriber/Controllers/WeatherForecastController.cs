@@ -12,21 +12,28 @@ public class WeatherForecastController : ControllerBase
     };
 
     private readonly ILogger<WeatherForecastController> _logger;
+    private readonly IActivityEventService _eventService;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+
+    public WeatherForecastController(ILogger<WeatherForecastController> logger, IActivityEventService eventService)
     {
         _logger = logger;
+        _eventService = eventService;
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
+        var chatEvent = new ChatDeletedEvent("salam");
+        _eventService.Send(chatEvent);
+
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
             Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
             TemperatureC = Random.Shared.Next(-20, 55),
             Summary = Summaries[Random.Shared.Next(Summaries.Length)]
         })
-        .ToArray();
+       .ToArray();
+
     }
 }

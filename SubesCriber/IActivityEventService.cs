@@ -1,4 +1,5 @@
 ﻿using System;
+using Mapster;
 using MicroTest1.EventBus.EventBus.Abstractions;
 using MicroTest1.EventBus.EventBus.Events;
 
@@ -59,6 +60,31 @@ namespace MicroTest1
         public string item { get; set; }
     }
 
+    public class NotifyDto
+    {
+        public NotifyDto()
+        {
 
+        }
+
+
+        public string ActorId { get; set; }
+        public int? ActorTypeId { get; set; }
+        public string AffectedUserId { get; set; }
+        public int? AffectedUserTypeId { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public string InDriectObjectId { get; set; }
+        public int? InDriectObjectTypeId { get; set; }
+        public string ObjectId { get; set; }
+        public int? ObjectTypeId { get; set; }
+        public int Verb { get; set; }
+        public string Id { get; set; }
+
+    }
+
+
+
+    
 }
+
 
