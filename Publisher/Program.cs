@@ -46,7 +46,8 @@ else if (builder.Environment.EnvironmentName?.Equals("Integeration") == true)
 ((useRabbitMq)
     ? builder.Services.AddRabbitMq(builder.Configuration).AddTransient<IActivityEventService, ActivityEventService>()
     : builder.Services.AddTestRabbitMq(builder.Configuration)
-).AddSingleton<BlockContactEventHandler>();
+).AddTransient<BlockContactEventHandler>().
+AddTransient<CreateUserEventHandler>();
 
 
 
@@ -63,7 +64,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseEventBus()
-            .SubscribeEvent<ChatDeletedEvent, BlockContactEventHandler>();
+            .SubscribeEvent<ChatDeletedEvent, BlockContactEventHandler>()
+            .SubscribeEvent<CreateUserEvent, CreateUserEventHandler>();
 
 
 

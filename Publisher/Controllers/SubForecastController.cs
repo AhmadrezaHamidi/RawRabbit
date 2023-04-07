@@ -30,5 +30,7 @@ public class SubForecastController : ControllerBase
             Summary = Summaries[Random.Shared.Next(Summaries.Length)]
         })
         .ToArray();
+
+
     }
 }

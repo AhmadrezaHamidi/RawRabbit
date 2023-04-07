@@ -35,6 +35,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
+
+
+builder.Services.AddLogging(loggingBuilder =>
+{
+    loggingBuilder.AddSeq(builder.Configuration.GetSection("Seq"));
+});
+
+
 var useRabbitMq = builder.Configuration.GetValue<bool>("UseRabbitMQ", true);
 if (builder.Environment.IsProduction())
     useRabbitMq = true;

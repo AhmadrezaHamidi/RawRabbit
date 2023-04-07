@@ -1,12 +1,8 @@
 ﻿<Properties StartupConfiguration="{6025ED32-A6C3-41E8-9DE4-064365E53845}|https">
   <MonoDevelop.Ide.ItemProperties.MicroTest1 PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RabbitMq/ICorrelationContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="RabbitMq/BusPublisher.cs" />
+      <File FileName="RabbitMq/BusPublisher.cs" Line="1" Column="1" />
       <File FileName="Messages/ICommand.cs" />
       <File FileName="Messages/Resource.cs" />
       <File FileName="Messages/RejectedEvent.cs" />
@@ -20,50 +16,56 @@
       <File FileName="RabbitMq/IBusPublisher.cs" />
       <File FileName="RabbitMq/IBusSubscriber.cs" />
       <File FileName="RabbitMq/Extensions.cs" />
-      <File FileName="RabbitMq/BusSubscriber.cs" />
+      <File FileName="RabbitMq/BusSubscriber.cs" Line="1" Column="1" />
       <File FileName="Messages/AhExeption.cs" />
-      <File FileName="RabbitMq/CorrelationContext.cs" Line="65" Column="30" />
-      <File FileName="RabbitMq/ICorrelationContext.cs" Line="1" Column="1" />
-      <File FileName="Controllers/BlockContactEventHandler.cs" Line="1" Column="1" />
-      <File FileName="Controllers/WeatherForecastController.cs" Line="27" Column="45" />
+      <File FileName="RabbitMq/CorrelationContext.cs" />
+      <File FileName="RabbitMq/ICorrelationContext.cs" />
+      <File FileName="Controllers/BlockContactEventHandler.cs" />
+      <File FileName="Controllers/WeatherForecastController.cs" Line="49" Column="1" />
       <File FileName="EventBus/EventBus/Abstractions/IDynamicIntegrationEventHandler.cs" />
       <File FileName="EventBus/EventBus/Abstractions/IEventBus.cs" />
       <File FileName="EventBus/EventBus/Abstractions/IIntegrationEventHandler.cs" />
       <File FileName="RabbitMq/RabbitMqOptions.cs" />
-      <File FileName="Messages/Statics/LinqExteraExtensions.cs" Line="29" Column="1" />
-      <File FileName="Program.cs" Line="66" Column="1" />
-      <File FileName="IActivityEventService.cs" Line="30" Column="14" />
-      <File FileName="EventBus/EventBus/Events/IntegrationEvent.cs" Line="17" Column="10" />
+      <File FileName="Messages/Statics/LinqExteraExtensions.cs" />
+      <File FileName="Program.cs" Line="59" Column="1" />
+      <File FileName="IActivityEventService.cs" />
+      <File FileName="EventBus/EventBus/Events/IntegrationEvent.cs" />
+      <File FileName="EventBus/EventBus/Extensions/GenericTypeExtensions.cs" />
+      <File FileName="EventBus/EventBus/IEventBusSubscriptionsManager.cs" />
+      <File FileName="EventBus/EventBusRabbitMQ/RabbitExtensions.cs" Line="77" Column="1" />
+      <File FileName="EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs" Line="40" Column="1" />
+      <File FileName="EventBus/EventBusRabbitMQ/DefaultRabbitMQPersistentConnection.cs" Line="91" Column="1" />
+      <File FileName="WeatherForecast.cs" Line="13" Column="1" />
+      <File FileName="EventBus/EventBusRabbitMQ/TestRabbitMQPersistentConnection.cs" />
+      <File FileName=".gitignore" />
+      <File FileName="appsettings.Development.json" Line="5" Column="28" />
+      <File FileName="appsettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MicroTest1" expanded="True">
             <Node name="MicroTest1" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="EventBus" expanded="True">
-                <Node name="EventBus" expanded="True">
-                  <Node name="Events" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="RabbitMq" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="ClassPad">
-        <State name="__root__">
-          <Node name="MicroTest1" expanded="True">
-            <Node name="MicroTest1" expanded="True" selected="True" />
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ahmadhfr/Documents/work/Backend/MicroservesAhmad/Micetest2/RawRabbit/SubesCriber/Controllers/WeatherForecastController.cs" relfile="Controllers/WeatherForecastController.cs" line="27" column="1" />
+      <Breakpoint file="/Users/ahmadhfr/Documents/work/Backend/MicroservesAhmad/Micetest2/RawRabbit/SubesCriber/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs" relfile="EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs" line="228" column="1" />
+      <Breakpoint file="/Users/ahmadhfr/Documents/work/Backend/MicroservesAhmad/Micetest2/RawRabbit/SubesCriber/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs" relfile="EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs" line="74" column="1" />
+      <Breakpoint file="/Users/ahmadhfr/Documents/work/Backend/MicroservesAhmad/Micetest2/RawRabbit/SubesCriber/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs" relfile="EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs" line="39" column="1" />
+      <Breakpoint file="/Users/ahmadhfr/Documents/work/Backend/MicroservesAhmad/Micetest2/RawRabbit/SubesCriber/EventBus/EventBusRabbitMQ/RabbitExtensions.cs" relfile="EventBus/EventBusRabbitMQ/RabbitExtensions.cs" line="77" column="1" />
+      <Breakpoint file="/Users/ahmadhfr/Documents/work/Backend/MicroservesAhmad/Micetest2/RawRabbit/SubesCriber/Program.cs" relfile="Program.cs" line="47" column="1" />
+      <Breakpoint file="/Users/ahmadhfr/Documents/work/Backend/MicroservesAhmad/Micetest2/RawRabbit/SubesCriber/Controllers/WeatherForecastController.cs" relfile="Controllers/WeatherForecastController.cs" line="33" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

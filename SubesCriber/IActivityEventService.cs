@@ -60,6 +60,26 @@ namespace MicroTest1
         public string item { get; set; }
     }
 
+
+
+    public class CreateUserEvent : IntegrationEvent
+    {
+        public CreateUserEvent(string ffirstName ,string lastname , string phoneN)
+        {
+            this.firstNAme = ffirstName;
+            this.LastNAme= lastname;
+            this.Phonenumber = phoneN;
+        }
+
+        public string firstNAme { get; set; }
+        public string LastNAme { get; set; }
+        public string Phonenumber { get; set; }
+    }
+
+
+
+    
+
     public class NotifyDto
     {
         public NotifyDto()

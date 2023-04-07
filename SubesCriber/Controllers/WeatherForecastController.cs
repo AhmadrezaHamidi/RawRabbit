@@ -27,6 +27,12 @@ public class WeatherForecastController : ControllerBase
         var chatEvent = new ChatDeletedEvent("salam");
         _eventService.Send(chatEvent);
 
+        _logger.LogInformation("fevevervrvrqqvvrvq");
+
+
+        var createUserEvent = new CreateUserEvent("ahmad", "ahmad", "ahmad");
+        _eventService.Send(createUserEvent);
+
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
             Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
@@ -34,6 +40,11 @@ public class WeatherForecastController : ControllerBase
             Summary = Summaries[Random.Shared.Next(Summaries.Length)]
         })
        .ToArray();
+
+
+
+        _logger.LogInformation("fevevervrvrqqvvrvq");
+
 
     }
 }

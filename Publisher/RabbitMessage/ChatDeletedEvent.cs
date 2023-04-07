@@ -40,5 +40,64 @@ namespace MicroTest1.RabbitMessage
             }
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public class CreateUserEvent : IntegrationEvent
+    {
+        public CreateUserEvent(string ffirstName, string lastname, string phoneN)
+        {
+            this.firstNAme = ffirstName;
+            this.LastNAme = lastname;
+            this.Phonenumber = phoneN;
+        }
+
+        public string firstNAme { get; set; }
+        public string LastNAme { get; set; }
+        public string Phonenumber { get; set; }
+    }
+
+
+
+    public class CreateUserEventHandler : IIntegrationEventHandler<CreateUserEvent>
+    {
+        private readonly ILogger<CreateUserEventHandler> logger;
+        public CreateUserEventHandler(ILogger<CreateUserEventHandler> logger)
+        {
+            this.logger = logger;
+        }
+
+        public async Task Handle(CreateUserEvent @event)
+        {
+            logger.LogInformation("-----{ApplicationContext} starts handlig event ({eventName}): when" +
+                " an event with id({eventId})",
+                "Pdd", nameof(CreateUserEvent), @event.Id);
+            try
+            {
+                var ttt = @event.Phonenumber;
+                var tty = @event.firstNAme;
+                var ttts = @event.LastNAme;
+            }
+            catch (System.Exception exp)
+            {
+                logger.LogError(exp, "----handling event failed: {eventId} from {ApplicationContext} with data - ({@event}) ",
+                    @event.Id, "pppp", @event);
+            }
+        }
+    }
 }
+
+
+
 

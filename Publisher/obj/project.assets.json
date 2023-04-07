@@ -12477,11 +12477,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ahmadhfr/Documents/work/Backend/MicroservesAhmad/Micetest2/RawRabbit/Publisher/MicroTest1.csproj",
+      "projectUniqueName": "/Users/ahmadhfr/Documents/work/MicroservesAhmad/Micetest2/RawRabbit/Publisher/MicroTest1.csproj",
       "projectName": "MicroTest1",
-      "projectPath": "/Users/ahmadhfr/Documents/work/Backend/MicroservesAhmad/Micetest2/RawRabbit/Publisher/MicroTest1.csproj",
+      "projectPath": "/Users/ahmadhfr/Documents/work/MicroservesAhmad/Micetest2/RawRabbit/Publisher/MicroTest1.csproj",
       "packagesPath": "/Users/ahmadhfr/.nuget/packages/",
-      "outputPath": "/Users/ahmadhfr/Documents/work/Backend/MicroservesAhmad/Micetest2/RawRabbit/Publisher/obj/",
+      "outputPath": "/Users/ahmadhfr/Documents/work/MicroservesAhmad/Micetest2/RawRabbit/Publisher/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ahmadhfr/.nuget/NuGet/NuGet.Config"
